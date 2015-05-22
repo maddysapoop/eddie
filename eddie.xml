@@ -49,7 +49,7 @@
                       <block type="controls_if" id="523" inline="false">
                         <value name="IF0">
                           <block type="logic_compare" id="561" inline="true">
-                            <field name="OP">GT</field>
+                            <field name="OP">LT</field>
                             <value name="A">
                               <block type="sensor_object" id="531">
                                 <field name="OBJECT">LEFTFRONT</field>
