@@ -28,25 +28,25 @@
                   </block>
                 </value>
                 <next>
-                  <block type="movement_forward" id="334">
-                    <next>
-                      <block type="controls_if" id="296" inline="false">
-                        <value name="IF0">
-                          <block type="logic_compare" id="303" inline="true">
-                            <field name="OP">EQ</field>
-                            <value name="A">
-                              <block type="sensor_spectrometer" id="304">
-                                <field name="LIGHT">BLUE</field>
-                              </block>
-                            </value>
-                            <value name="B">
-                              <block type="math_number" id="305">
-                                <field name="NUM">100</field>
-                              </block>
-                            </value>
+                  <block type="controls_if" id="296" inline="false">
+                    <value name="IF0">
+                      <block type="logic_compare" id="303" inline="true">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="sensor_spectrometer" id="304">
+                            <field name="LIGHT">BLUE</field>
                           </block>
                         </value>
-                        <statement name="DO0">
+                        <value name="B">
+                          <block type="math_number" id="305">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_forward" id="344">
+                        <next>
                           <block type="robot_delay" id="317" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="324">
@@ -54,9 +54,9 @@
                               </block>
                             </value>
                           </block>
-                        </statement>
+                        </next>
                       </block>
-                    </next>
+                    </statement>
                   </block>
                 </next>
               </block>
