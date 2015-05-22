@@ -1,1 +1,44 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="oled_cleardisplay" id="123" x="83" y="-14">
+    <next>
+      <block type="controls_whileUntil" id="32" inline="false">
+        <field name="MODE">WHILE</field>
+        <statement name="DO">
+          <block type="movement_forward" id="43">
+            <next>
+              <block type="robot_delay" id="67" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="65">
+                    <field name="NUM">200</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="led_select" id="107" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="155">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="258">
+                        <field name="TEXT">hello</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="229"></block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="oled_setcursor" id="132" inline="true" x="369" y="104"></block>
+  <block type="logic_compare" id="148" inline="true" x="344" y="182">
+    <field name="OP">EQ</field>
+  </block>
+</xml>
