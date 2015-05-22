@@ -8,46 +8,46 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_cleardisplay" id="123">
+      <block type="movement_forward" id="412">
         <next>
-          <block type="oled_setcursor" id="132" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="272">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="273">
-                <field name="NUM">0</field>
-              </block>
-            </value>
+          <block type="oled_cleardisplay" id="123">
             <next>
-              <block type="oled_drawnumber" id="282" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="289">
-                    <field name="LIGHT">BLUE</field>
+              <block type="oled_setcursor" id="132" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="272">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="273">
+                    <field name="NUM">0</field>
                   </block>
                 </value>
                 <next>
-                  <block type="controls_if" id="296" inline="false">
-                    <value name="IF0">
-                      <block type="logic_compare" id="303" inline="true">
-                        <field name="OP">EQ</field>
-                        <value name="A">
-                          <block type="sensor_spectrometer" id="304">
-                            <field name="LIGHT">BLUE</field>
-                          </block>
-                        </value>
-                        <value name="B">
-                          <block type="math_number" id="305">
-                            <field name="NUM">100</field>
-                          </block>
-                        </value>
+                  <block type="oled_drawnumber" id="282" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_spectrometer" id="289">
+                        <field name="LIGHT">BLUE</field>
                       </block>
                     </value>
-                    <statement name="DO0">
-                      <block type="movement_forward" id="402">
-                        <next>
+                    <next>
+                      <block type="controls_if" id="296" inline="false">
+                        <value name="IF0">
+                          <block type="logic_compare" id="303" inline="true">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="sensor_spectrometer" id="304">
+                                <field name="LIGHT">BLUE</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="305">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
                           <block type="robot_delay" id="317" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="324">
@@ -58,9 +58,9 @@
                               <block type="movement_stop" id="381"></block>
                             </next>
                           </block>
-                        </next>
+                        </statement>
                       </block>
-                    </statement>
+                    </next>
                   </block>
                 </next>
               </block>
