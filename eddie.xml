@@ -46,18 +46,14 @@
                       </block>
                     </value>
                     <statement name="DO0">
-                      <block type="movement_forward" id="371">
+                      <block type="movement_stop" id="229">
                         <next>
-                          <block type="movement_stop" id="229">
-                            <next>
-                              <block type="robot_delay" id="317" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="324">
-                                    <field name="NUM">68</field>
-                                  </block>
-                                </value>
+                          <block type="robot_delay" id="317" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="324">
+                                <field name="NUM">68</field>
                               </block>
-                            </next>
+                            </value>
                           </block>
                         </next>
                       </block>
