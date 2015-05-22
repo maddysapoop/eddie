@@ -54,13 +54,13 @@
                                 <field name="NUM">100</field>
                               </block>
                             </value>
-                            <next>
-                              <block type="movement_stop" id="381"></block>
-                            </next>
                           </block>
                         </next>
                       </block>
                     </statement>
+                    <next>
+                      <block type="movement_stop" id="432"></block>
+                    </next>
                   </block>
                 </next>
               </block>
