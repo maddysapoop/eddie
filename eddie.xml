@@ -32,7 +32,7 @@
                   <block type="controls_if" id="296" inline="false">
                     <value name="IF0">
                       <block type="logic_compare" id="303" inline="true">
-                        <field name="OP">EQ</field>
+                        <field name="OP">GT</field>
                         <value name="A">
                           <block type="sensor_spectrometer" id="304">
                             <field name="LIGHT">BLUE</field>
