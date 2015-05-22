@@ -62,6 +62,9 @@
                             </value>
                           </block>
                         </value>
+                        <statement name="DO0">
+                          <block type="movement_left" id="578"></block>
+                        </statement>
                         <next>
                           <block type="movement_forward" id="422">
                             <next>
