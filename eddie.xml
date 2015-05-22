@@ -29,35 +29,38 @@
                   </block>
                 </value>
                 <next>
-                  <block type="controls_if" id="296" inline="false">
-                    <value name="IF0">
-                      <block type="logic_compare" id="303" inline="true">
-                        <field name="OP">EQ</field>
-                        <value name="A">
-                          <block type="sensor_spectrometer" id="304">
-                            <field name="LIGHT">BLUE</field>
+                  <block type="movement_forward" id="391">
+                    <next>
+                      <block type="controls_if" id="296" inline="false">
+                        <value name="IF0">
+                          <block type="logic_compare" id="303" inline="true">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="sensor_spectrometer" id="304">
+                                <field name="LIGHT">BLUE</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="305">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
                           </block>
                         </value>
-                        <value name="B">
-                          <block type="math_number" id="305">
-                            <field name="NUM">100</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <statement name="DO0">
-                      <block type="movement_stop" id="229">
-                        <next>
+                        <statement name="DO0">
                           <block type="robot_delay" id="317" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="324">
                                 <field name="NUM">68</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="movement_stop" id="381"></block>
+                            </next>
                           </block>
-                        </next>
+                        </statement>
                       </block>
-                    </statement>
+                    </next>
                   </block>
                 </next>
               </block>
