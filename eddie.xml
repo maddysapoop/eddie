@@ -27,14 +27,33 @@
                     <field name="LIGHT">BLUE</field>
                   </block>
                 </value>
+                <next>
+                  <block type="controls_if" id="296" inline="false">
+                    <value name="IF0">
+                      <block type="logic_compare" id="303" inline="true">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="sensor_spectrometer" id="304">
+                            <field name="LIGHT">BLUE</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="305">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="movement_stop" id="229"></block>
+                    </statement>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
         </next>
       </block>
     </statement>
-    <next>
-      <block type="movement_stop" id="229"></block>
-    </next>
   </block>
 </xml>
